@@ -130,7 +130,7 @@ static void Up(heapPtr heap) {
 }
 
 static void buildFunc(heapPtr heap, int pos) {
-  if (right(right(pos)) > heap->max) {
+  if (right(pos) > heap->max) {
     Down(heap, pos);
     return;
   }
